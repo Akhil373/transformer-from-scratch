@@ -1,15 +1,16 @@
 # %%
 from numpy.random import Generator
 from os import login_tty
-import matplotlib
 import matplotlib.pyplot as plt
 import torch
-import os
-os.chdir("/home/axle/code/ML/transformer-from-scratch/autoregressive-sequence-models/")
+# import os
+# os.chdir("/home/axle/code/ML/transformer-from-scratch/autoregressive-sequence-models/")
+# %%
+!curl -o 'names.txt' "https://raw.githubusercontent.com/karpathy/makemore/refs/heads/master/names.txt"
 # %%
 words = open("./names.txt", "r").read().splitlines()
 words[:10]
-min(len(w) for w in words)
+print(min(len(w) for w in words)
 max(len(w) for w in words)
 # %%
 b={}
